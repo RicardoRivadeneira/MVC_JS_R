@@ -1,0 +1,65 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin: 0;
+    background-color: #2b2b2b; /* Fondo oscuro más claro */
+    color: #fff; /* Texto blanco para mayor contraste */
+  }
+  
+  .container {
+    display: flex;
+    max-width: 800px; /* Ancho máximo del contenedor principal */
+    margin: 20px auto; /* Centrar el contenedor principal en la pantalla */
+    gap: 20px; /* Espacio entre los contenedores */
+  }
+  
+  #calculadora {
+    flex: 1; /* Ocupa el 50% del ancho del contenedor principal */
+    padding: 20px;
+    background-color: #373737; /* Fondo más oscuro para el contenedor de la calculadora */
+    border-radius: 10px; /* Esquinas redondeadas */
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.5); /* Sombra para resaltar el contenedor */
+  }
+  
+  #info-mvc {
+    flex: 1; /* Ocupa el 50% del ancho del contenedor principal */
+    padding: 20px;
+    background-color: #373737; /* Fondo más oscuro para el contenedor de información */
+    border-radius: 10px; /* Esquinas redondeadas */
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.5); /* Sombra para resaltar el contenedor */
+  }
+  
+  label {
+    display: block;
+    margin-top: 10px;
+    color: #fff; /* Texto blanco para los labels */
+  }
+  
+  input, button {
+    margin: 5px;
+    padding: 10px;
+    font-size: 16px;
+  }
+  
+  button {
+    cursor: pointer;
+  }
+  
+  #pantalla {
+    text-align: center;
+    width: 80%; /* Ajusta el ancho de la pantalla */
+    margin: 5px;
+  }
+  
+  .respuesta {
+    margin-top: 10px;
+    font-size: 18px;
+    border: 1px solid #ccc;
+    padding: 10px;
+    width: 80%; /* Ajusta el ancho de la respuesta */
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #eee; /* Fondo más claro para la respuesta */
+    color: #333; /* Texto más oscuro para la respuesta */
+  }
+  

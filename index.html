@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/style.css">
+  <title>Calculadora MVC</title>
+</head>
+<body>
+    <h1>EasyClass</h1>
+  <div class="container">
+    <div id="calculadora">
+      <!-- Contenido de la calculadora -->
+      <h1>Calculadora con MVC</h1>
+      <label for="nombre">Ingresa tu Nombre:</label>
+      <input type="text" id="nombre">
+
+      <br>
+
+      <input type="text" id="pantalla" disabled>
+
+      <br>
+
+      <button onclick="controlador.agregarNumero(7)">7</button>
+      <button onclick="controlador.agregarNumero(8)">8</button>
+      <button onclick="controlador.agregarNumero(9)">9</button>
+      <button onclick="controlador.agregarOperacion('+')">+</button>
+
+      <br>
+
+      <button onclick="controlador.agregarNumero(4)">4</button>
+      <button onclick="controlador.agregarNumero(5)">5</button>
+      <button onclick="controlador.agregarNumero(6)">6</button>
+      <button onclick="controlador.agregarOperacion('-')">-</button>
+
+      <br>
+
+      <button onclick="controlador.agregarNumero(1)">1</button>
+      <button onclick="controlador.agregarNumero(2)">2</button>
+      <button onclick="controlador.agregarNumero(3)">3</button>
+      <button onclick="controlador.agregarOperacion('*')">*</button>
+
+      <br>
+
+      <button onclick="controlador.agregarNumero(0)">0</button>
+      <button onclick="controlador.limpiar()">C</button>
+      <button onclick="controlador.calcular()">=</button>
+      <button onclick="controlador.agregarOperacion('/')">/</button>
+
+      <div id="resultado" class="respuesta"></div>
+    </div>
+
+    <div id="info-mvc">
+      <!-- Contenido de la información sobre el MVC -->
+      <h2>Modelo-Vista-Controlador (MVC)</h2>
+      <p>
+        En este proyecto, la arquitectura MVC se utiliza para organizar la lógica de la calculadora de manera estructurada y modular.
+      </p>
+      <p>
+        <strong>Modelo:</strong> El modelo gestiona los datos y la lógica de negocio. En este caso, maneja el nombre del usuario, los números involucrados en las operaciones, el resultado y la operación actual.
+      </p>
+      <p>
+        <strong>Vista:</strong> La vista se encarga de presentar la información al usuario. Aquí, actualiza el elemento `#resultado` con el resultado de la operación realizada.
+      </p>
+      <p>
+        <strong>Controlador:</strong> El controlador maneja las interacciones del usuario y actúa como intermediario entre la vista y el modelo. Asocia eventos a funciones específicas para actualizar el modelo y la vista.
+      </p>
+      <p>
+        Elaborado por: Ricardo Rivadeneira
+      </p>
+      <!-- Puedes agregar más información según tus necesidades -->
+    </div>
+  </div>
+  <div>Ingresa un primer número, escoge la operación, un segundo número y dale a igual para obtener el resultado!</div>
+  <script src="js/modelo.js"></script>
+  <script src="js/vista.js"></script>
+  <script src="js/controlador.js"></script>
+</body>
+</html>
