@@ -39,3 +39,6 @@ El controlador (`CalculadoraControlador`) maneja las interacciones del usuario y
 
 ## Elaborado por:
 Ricardo Rivadeneira
+
+## Evidencia
+![Calculadora](Evidencia.png)
