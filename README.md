@@ -26,6 +26,8 @@ Este proyecto implementa una calculadora simple utilizando el patrón de diseño
 3. Utiliza los botones numéricos y de operación para realizar cálculos.
 4. Visualiza los resultados en la pantalla.
 
+## Evidencia
+![Calculadora](Evidencia.png)
 ## MVC (Modelo-Vista-Controlador)
 
 ### Modelo
@@ -40,5 +42,3 @@ El controlador (`CalculadoraControlador`) maneja las interacciones del usuario y
 ## Elaborado por:
 Ricardo Rivadeneira
 
-## Evidencia
-![Calculadora](Evidencia.png)
